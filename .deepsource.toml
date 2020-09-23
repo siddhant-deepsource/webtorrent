@@ -1,0 +1,22 @@
+version = 1
+
+test_patterns = ["test/**"]
+
+exclude_patterns = [
+    ".github/**",
+    "docs/**",
+    "scripts/**",
+    "webtorrent.chromeapp.js",
+    "webtorrent.min.js"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  environment = [
+    "nodejs",
+    "browser"
+  ]
+  style_guide = "standard"
